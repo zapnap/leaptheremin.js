@@ -8,8 +8,8 @@ var theremin = (function () {
       ampDecay = 0.4,
       pitchRate = 0.2,
       maxGain = 0.5,
-      minFreq = 16.35, // C0
-      maxFreq = 4186.01, // C8
+      minFreq = 16, // C0
+      maxFreq = 4186, // C8
       leapMin = 100,
       leapMax = 400,
       waveType = 0,
@@ -119,7 +119,7 @@ var theremin = (function () {
     },
 
     scale: function(value, oldMin, oldMax, newMin, newMax){
-      return (value / ((oldMax - oldMin) / (newMax - newMin))) + newMin;
+      return (((newMax - newMin) * (value - oldMin)) / (oldMax - oldMin)) + newMin;
     },
 
     play: function(pitchValue, volumeValue){

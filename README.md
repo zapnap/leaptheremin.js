@@ -14,4 +14,3 @@ you have to have a Leap dev board.
 * Adjust the volume level using the dial (responds to mouse scroll too).
 * Close your first or mouse off the control area to temporarily pause the sound.
 * Use the "[" and "]" keys to alternate between oscillator waveform types.
-* Our maffs / scaling logic might need some werk :(
