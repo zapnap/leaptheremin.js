@@ -7,6 +7,8 @@ not-insignificant amount of audio code was borrowed.
 Requires latest Chrome/Safari and LeapMotion v0.7.1+. Yep, that means
 you have to have a Leap dev board.
 
+Got all that? Try it out [here](http://zapnap.github.com/leaptheremin.js).
+
 ## Usage
 
 * Mouse over the control area to activate the theremin and get started.
