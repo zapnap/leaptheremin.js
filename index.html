@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>LeapTheremin.js</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="controls">
+    <div id="pitcha" class="freq"><span class="label"></span><span class="value">&mdash;</span> Hz</div>
+    <div id="pitchd" class="sub">( pitch distance <span class="label"></span><span class="value"></span> )</div>
+    <div id="activated" class="dcontainer">
+      <input type="text" id="volume" class="dial">
+      <div class="toggle" id="toggle">OFF</div>
+    </div>
+    <div id="debug" class="debug"></div>
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.knob.js"></script>
+  <script src="js/theremin.js"></script>
+</body>
+</html>

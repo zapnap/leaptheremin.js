@@ -1,0 +1,84 @@
+$colour: #ec118f;
+$triad: #118feb;
+
+html {
+  overflow: hidden;
+  height: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+::selection {
+  background: transparent;
+}
+
+body {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  overflow: hidden;
+  height: 100%;
+  background: darken($triad, 5%);
+  background: -webkit-linear-gradient(top left, desaturate($triad, 50%), darken($triad, 5%));
+  background:    -moz-linear-gradient(top left, desaturate($triad, 50%), darken($triad, 5%));
+  background:      -o-linear-gradient(top left, desaturate($triad, 50%), darken($triad, 5%));
+  background:     -ms-linear-gradient(top left, desaturate($triad, 50%), darken($triad, 5%));
+  background:         linear-gradient(top left, desaturate($triad, 50%), darken($triad, 5%));
+  -webkit-box-shadow: 0 0 120px rgba(0, 0, 0, 0.8) inset;
+          box-shadow: 0 0 120px rgba(0, 0, 0, 0.8) inset;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.controls {
+  width: 300px;
+  margin: 50px auto 0;
+
+  .freq {
+    font-size: 36px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    -webkit-text-shadow: 2px 2px 0 #000;
+       -moz-text-shadow: 2px 2px 0 #000;
+            text-shadow: 2px 2px 0 #000;
+
+  }
+
+  .sub {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .dcontainer {
+    width: 200px;
+    margin: 20px auto 0;
+  }
+
+  .toggle {
+    border: 2px solid #30658C;
+    -webkit-box-shadow: 2px 2px 0 #333;
+       -moz-box-shadow: 2px 2px 0 #333;
+            box-shadow: 2px 2px 0 #333;
+    -webkit-text-shadow: 2px 2px 0 #000;
+       -moz-text-shadow: 2px 2px 0 #000;
+            text-shadow: 2px 2px 0 #000;
+    background: skyBlue;
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+    margin: 20px auto;
+    padding: 5px;
+  }
+
+  .debug {
+    font-size: 11px;
+  }
+}
